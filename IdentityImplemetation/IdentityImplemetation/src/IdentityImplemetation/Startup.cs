@@ -44,7 +44,7 @@ namespace IdentityImplemetation
             .UseSqlServer(@"Data Source=ATHULYAS\SQLEXPRESS;initial Catalog=DemoDb;Integrated security =True"));
 
             // Adds the ASP .net core Identity services
-            services.AddIdentity<IdentityUser, IdentityRole>()
+            services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<AppDbContext>(); //Adds an EF implemetation of identity info stores
 
             services.AddMvc();
@@ -76,7 +76,7 @@ namespace IdentityImplemetation
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=User}/{action=Index}/{id?}");
             });
         }
     }

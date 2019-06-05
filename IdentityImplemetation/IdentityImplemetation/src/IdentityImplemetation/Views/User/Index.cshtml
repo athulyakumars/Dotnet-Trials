@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@model IdentityImplemetation.ViewModels.UserViewModel
+@{
+}
+
+<!DOCTYPE html>
 <html>
 <title>Its me Athulya!</title>
 <meta charset="UTF-8">
@@ -85,7 +89,7 @@ a {
                     <tr>
                         <td>
                             <label for="fname"><b>First Name</b></label>
-                            <input type="text" placeholder="Enter First Name" name="fname" required>
+                            <input type="text" placeholder="Enter First Name" name="fname" required >
 
                         </td>
                         <td>
@@ -102,7 +106,7 @@ a {
                         </td>
                         <td>
                             <label for="psw"><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <input type="password" placeholder="Enter Password" name="psw" required >
                         </td>
                     </tr>
                     @*<tr>
@@ -150,3 +154,11 @@ a {
 
 </body>
 </html>
+
+<script>
+    $("#registerbtn").click(function(){
+
+        alert(1);
+    });
+
+</script>
